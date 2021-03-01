@@ -1,0 +1,14 @@
+<div *ngFor="let product of products">
+  <h3>
+  <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/amazonglobal/images/email/asins/DURM-2B5F6D60043272H7._V531815298_.jpg">
+      <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+    <button (click)="share()">
+    Share
+  </button>
+  </h3>
+</div>
